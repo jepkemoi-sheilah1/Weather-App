@@ -1,5 +1,5 @@
 
-const API_KEY=  "a0e3f6f510697cf3399b5d067d27b2b2"// this key is private
+const API_KEY=  ""// this key is private
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 //selecting elements from the DOM
