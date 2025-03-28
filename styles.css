@@ -17,102 +17,115 @@ body {
 /* Weather Card */
 .card {
     background: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px; /* Reduce padding */
+    border-radius: 10px; /* Slightly smaller border-radius */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 470px;
+    width: 500px; /* Reduce width */
     height: auto;
 }
 
 /* Search Bar */
 .search {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    gap: 5px; /* Reduce spacing */
+    margin-bottom: 15px; /* Reduce bottom margin */
 }
 
 .search input {
-    width: 75%;
-    height: 60px;
-    padding: 10px 25px;
-    border: 2px solid #ddd;
-    border-radius: 30px;
-    font-size: 16px;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    flex: 1;
-
+    width: 70%;
+    height: 50px; /* Reduce height */
+    padding: 8px 20px; /* Reduce padding */
+    border-radius: 25px; /* Reduce border-radius */
+    font-size: 14px; /* Reduce font size */
 }
 
 .search button {
-    background: #00aaff;
-    border: none;
-    outline: 0;
-    padding: 10px 15px;
-    border-radius: 50px;
-    width: 60px;
-    margin-left: 10px;
-    cursor: pointer;
+    width: 50px; /* Reduce button size */
+    height: 50px;
+    padding: 8px;
 }
 
 .search button img {
-    width: 16px;
-    height: auto;
-
-}
-.search button:hover {
-    background: #0077cc;
+    width: 14px; /* Reduce search icon size */
 }
 
+/* Weather Info */
 .temp {
-    font-size: 40px;
+    font-size: 35px; /* Reduce font size */
     font-weight: bold;
-    color: #333;
 }
 
 .city {
-    font-size: 28px;
-    color: #666;
-    margin-bottom: 10px;
+    font-size: 22px; /* Reduce font size */
+    margin-bottom: 8px; /* Reduce space */
 }
 
 /* Description Section */
 .description {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
-    padding: 0 20px; 
+    margin-top: 15px; /* Reduce margin */
+    padding: 0 10px; /* Reduce padding */
+}
+
+#forecast-container {
+    margin-top: 15px;
+    padding: 5px;
+}
+
+/* Forecast Cards */
+.forecast-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduce gap */
+    margin-top: 5px;
+}
+
+.forecast-card {
+    background: #f1f1f1;
+    padding: 8px; /* Reduce padding */
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    width: 100px; /* Reduce width */
+    font-size: 12px; /* Reduce font size */
+}
+
+.forecast-card img {
+    width: 40px; /* Reduce image size */
 }
 
 .col {
     display: flex;
     align-items: center;
     text-align: left;
-    gap: 10px; 
-    
-}
-
-/* Improve responsiveness */
-@media (max-width: 780px) {
-    .details {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-    }
-
-    .col {
-        justify-content: center;
-        margin-bottom: 10px;
-    }
+    gap: 5px; /* Reduce gap */
 }
 
 .col img {
-    width: 30px;  
+    width: 25px;  
     height: auto; 
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 780px) {
+    .card {
+        width: 90%;
+    }
+
+    .forecast-list {
+        flex-wrap: wrap;
+    }
+
+    .forecast-card {
+        width: 80px;
+    }
+
+    .col {
+        flex-direction: column;
+        text-align: center;
+    }
+}
