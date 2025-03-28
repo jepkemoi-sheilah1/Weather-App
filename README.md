@@ -78,6 +78,18 @@ Get your API key from [OpenWeather](https://openweathermap.org/api).
 
 ---
 
+### Future Implementations
+
+Geolocation-Based Weather: Automatically detect user location for weather updates.
+
+Saved Locations: Allow users to bookmark their favorite cities for quick access.
+
+Hourly Forecast: Display detailed hourly weather predictions.
+
+Dark Mode: Implement a dark mode option for better user experience.
+
+Weather Alerts: Notify users of severe weather conditions.
+
 ## contributing
 1.fork the repository
 2.commit new changes 
